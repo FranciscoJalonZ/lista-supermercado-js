@@ -1,0 +1,127 @@
+/* Configuración global para resetear márgenes y usar una fuente moderna */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* RÚBRICA: Fondo del cuerpo con color personalizado #1a1a2e */
+body {
+    background-color: #1a1a2e; 
+    color: #ffffff; /* Texto principal en blanco para legibilidad */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para el encabezado y pie de página */
+header, footer {
+    background-color: #16213e; /* Un tono ligeramente distinto para profundidad */
+    padding: 20px;
+    text-align: center;
+}
+
+/* RÚBRICA: Uso de Flexbox para organizar las tarjetas al centro */
+.contenedor-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* RÚBRICA: Diseño tipo Card con color #e0f7fa */
+.card {
+    background-color: #e0f7fa; 
+    color: #1a1a2e; /* Texto oscuro dentro de la tarjeta para contraste */
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos de los títulos dentro de las cards */
+h2, h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e94560; /* Subrayado con el color del botón */
+    display: inline-block;
+}
+
+/* RÚBRICA: Estilos :focus para accesibilidad en los inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #e94560; /* Cambia al color rosa al hacer clic */
+    box-shadow: 0 0 8px rgba(233, 69, 96, 0.3);
+}
+
+/* RÚBRICA: Botón Agregar con color #e94560 y efecto :hover */
+#btn-agregar {
+    background-color: #e94560;
+    color: white;
+    margin-top: 15px;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#btn-agregar:hover {
+    background-color: #cf3a54; /* Un tono más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Estilos de la lista dinámica */
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+li {
+    background-color: #ffffff;
+    color: #1a1a2e;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* RÚBRICA: Diferenciación visual para productos comprados */
+.producto-comprado {
+    text-decoration: line-through;
+    opacity: 0.5;
+    background-color: #b2ebf2; /* Cian más oscuro para indicar "completado" */
+}
+
+/* Botón de eliminar (Acción secundaria) */
+.btn-eliminar {
+    background-color: #533483; /* Color púrpura para contrastar */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover {
+    background-color: #432c6d;
+}
+
+/* Clases de utilidad para el JS */
+.error { color: #e94560; font-weight: bold; margin-top: 10px; }
+.oculto { display: none; }
