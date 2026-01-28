@@ -6,7 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* RÚBRICA: Fondo del cuerpo con color personalizado #1a1a2e */
+/* Fondo del cuerpo con color personalizado #1a1a2e */
 body {
     background-color: #1a1a2e; 
     color: #ffffff; /* Texto principal en blanco para legibilidad */
@@ -22,7 +22,7 @@ header, footer {
     text-align: center;
 }
 
-/* RÚBRICA: Uso de Flexbox para organizar las tarjetas al centro */
+/* Uso de Flexbox para organizar las tarjetas al centro */
 .contenedor-principal {
     flex: 1;
     display: flex;
@@ -32,7 +32,7 @@ header, footer {
     gap: 20px;
 }
 
-/* RÚBRICA: Diseño tipo Card con color #e0f7fa */
+/* Diseño tipo Card con color #e0f7fa */
 .card {
     background-color: #e0f7fa; 
     color: #1a1a2e; /* Texto oscuro dentro de la tarjeta para contraste */
@@ -50,7 +50,7 @@ h2, h3 {
     display: inline-block;
 }
 
-/* RÚBRICA: Estilos :focus para accesibilidad en los inputs */
+/* Estilos :focus para accesibilidad en los inputs */
 input {
     width: 100%;
     padding: 12px;
@@ -65,7 +65,7 @@ input:focus {
     box-shadow: 0 0 8px rgba(233, 69, 96, 0.3);
 }
 
-/* RÚBRICA: Botón Agregar con color #e94560 y efecto :hover */
+/* Botón Agregar con color #e94560 y efecto :hover */
 #btn-agregar {
     background-color: #e94560;
     color: white;
@@ -101,7 +101,7 @@ li {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* RÚBRICA: Diferenciación visual para productos comprados */
+/* Diferenciación visual para productos comprados */
 .producto-comprado {
     text-decoration: line-through;
     opacity: 0.5;
@@ -124,4 +124,5 @@ li {
 
 /* Clases de utilidad para el JS */
 .error { color: #e94560; font-weight: bold; margin-top: 10px; }
+
 .oculto { display: none; }
